@@ -7,6 +7,7 @@ function Header() {
         <>
             <a href="#" class="logo">
                 <img src="https://assets.codepen.io/1462889/fcy.png" alt="External Image" />
+                
             </a>
 
             <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon" />
