@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-body{
-  background-color: #1f2029!important;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: italic;;
-  display: block;
-}
-
 #root {
   max-width: 100%;
   margin: 0 auto;
@@ -16,22 +8,26 @@ body{
 }
 
 .logo {
+  color: #212121;
   height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #000);
 }
+
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 2em #000);
 }
 
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -52,16 +48,19 @@ body{
 }
 
 
-.outline-div{
+.outline-div {
+  color: #353746;
   font-size: 90px;
+  text-align: center;
 }
 
 .bold {
   font-weight: 900;
-  color: #fff;
+  color: #353746;
 }
+
 .outline {
   font-weight: 900;
-  -webkit-text-stroke: 2px #fff;
+  -webkit-text-stroke: 2px #353746;
   color: transparent;
 }

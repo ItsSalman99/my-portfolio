@@ -1,0 +1,10 @@
+.squares-canvas {
+  position: fixed; /* Ensures it covers the entire background */
+  top: 0;
+  left: 0;
+  width: 100vw;  /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  border: none;
+  display: block;
+  z-index: 0; /* Send it behind other elements */
+}
