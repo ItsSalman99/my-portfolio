@@ -2,8 +2,9 @@
 
 #root {
   max-width: 100%;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   padding: 2rem;
+  margin-left: 80px;
   /* text-align: center; */
 }
 
@@ -51,7 +52,6 @@
 .outline-div {
   color: #353746;
   font-size: 90px;
-  text-align: center;
 }
 
 .bold {

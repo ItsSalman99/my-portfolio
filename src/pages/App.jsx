@@ -13,13 +13,13 @@ function App() {
 
       <div >
         <Particles
-          particleColors={['#000', '#000']}
-          particleCount={200}
-          particleSpread={10}
-          speed={0.1}
+          particleColors={['#566573', '#566573']}
+          particleCount={600}
+          particleSpread={9}
+          speed={0.2}
           particleBaseSize={100}
           moveParticlesOnHover={true}
-          alphaParticles={false}
+          alphaParticles={true}
           disableRotation={false}
         />
       </div>
@@ -29,10 +29,11 @@ function App() {
       {/* <SplashCursor /> */}
 
 
-      <div class="section-center m-4 p-4">
+      <div class="section-center">
+        <h2>Hello there!</h2>
         <div className='outline-div'>
-          <span class="outline ">Hey, I am <span className='bold'>Salman</span> </span><br />
-          <span class="bold">Full-Stack <span className='outline'>Developer</span></span><br />
+          <span class="outline ">I'm <span className='bold'>Salman Abbas</span> </span><br />
+          <span class="bold">a full-stack <span className='outline'>developer</span></span><br />
           <span class="outline">Building Scalable</span> <br />
           <span class="bold">& Efficient Web Solutions</span>
 
