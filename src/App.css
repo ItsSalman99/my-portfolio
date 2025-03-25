@@ -48,10 +48,15 @@
   color: #888;
 }
 
+.section-container {
+  position: relative;
+  color: #000;
+}
 
 .outline-div {
+  font-family: NeueMagnat;
   color: #353746;
-  font-size: 90px;
+  font-size: 80px;
 }
 
 .bold {
@@ -63,4 +68,20 @@
   font-weight: 900;
   -webkit-text-stroke: 2px #353746;
   color: transparent;
+}
+
+.button-style{
+  color: #353746!important;
+  border-color: #353746!important;
+  background-color: transparent!important;
+  padding: 10px;
+  width: 150px;
+}
+
+.button-style:hover{
+
+  color: #fff!important;
+  background-color: #353746!important;
+  transition: 1s;
+
 }

@@ -1,8 +1,7 @@
 import { useState } from 'react'
 import '../App.css'
 import Header from '../components/Header'
-import Particles from '../components/Particles.jsx';
-
+import CircularText from '../components/CircularText';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -10,39 +9,32 @@ function App() {
   return (
     <>
 
-
-      <div >
-        <Particles
-          particleColors={['#566573', '#566573']}
-          particleCount={600}
-          particleSpread={9}
-          speed={0.2}
-          particleBaseSize={100}
-          moveParticlesOnHover={true}
-          alphaParticles={true}
-          disableRotation={false}
-        />
-      </div>
-
       <Header />
 
-      {/* <SplashCursor /> */}
+      <div class="">
+        <div className="row">
+          <div className="col-8">
+            <h1 style={{ fontFamily: 'NeueMagnat', color: '#353746' }}>Graphic Design x Coding = Creative Dev</h1>
 
+            <div className='outline-div'>
+              <span class="bold">A Full Stack Developer is your go-to expert for both front-end and back-end development.</span>
+              {/* <span class="bold">a Full Stack Developer crafts seamless digital experiences.</span> <br /> */}
+            </div>
+            <button className='button-style'>Lets Talk</button>
+          </div>
+          <div className="col-4">
+            <CircularText
+              text="DESIGN*TO*DEVELOPMENT*"
+              onHover="goBonkers"
+              spinDuration={40}
+              className="text-dark"
+            />
 
-      <div class="section-center">
-        <h2>Hello there!</h2>
-        <div className='outline-div'>
-          <span class="outline ">I'm <span className='bold'>Salman Abbas</span> </span><br />
-          <span class="bold">a full-stack <span className='outline'>developer</span></span><br />
-          <span class="outline">Building Scalable</span> <br />
-          <span class="bold">& Efficient Web Solutions</span>
-
+          </div>
         </div>
 
-
-
-
       </div >
+
     </>
   )
 }
