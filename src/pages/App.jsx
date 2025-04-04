@@ -2,6 +2,11 @@ import { useState } from 'react'
 import '../App.css'
 import Header from '../components/Header'
 import CircularText from '../components/CircularText';
+import DecayCard from '../components/DecayCard';
+import MainSection from '../components/sections/MainSection';
+import SummarySection from '../components/sections/SummarySection';
+import ScrollVelocity from '../components/ScrollVelocity';
+import CircularGallery from '../components/CircularGallery'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,29 +16,26 @@ function App() {
 
       <Header />
 
-      <div class="">
-        <div className="row">
-          <div className="col-8">
-            <h1 style={{ fontFamily: 'NeueMagnat', color: '#353746' }}>Graphic Design x Coding = Creative Dev</h1>
+      <MainSection />
 
-            <div className='outline-div'>
-              <span class="bold">A Full Stack Developer is your go-to expert for both front-end and back-end development.</span>
-              {/* <span class="bold">a Full Stack Developer crafts seamless digital experiences.</span> <br /> */}
-            </div>
-            <button className='button-style'>Lets Talk</button>
-          </div>
-          <div className="col-4">
-            <CircularText
-              text="DESIGN*TO*DEVELOPMENT*"
-              onHover="goBonkers"
-              spinDuration={40}
-              className="text-dark"
-            />
+      <SummarySection />
 
-          </div>
-        </div>
+      <div style={{ backgroundColor: '#000', maxWidth: '100%', height: '20vh', alignContent: 'center', color: '#fff', marginBottom: '400px' }}>
+        <ScrollVelocity
+          texts={['Full-stack developer ------ turning ideas into apps , ']}
+          velocity={100}
+          className="custom-scroll-text"
+        />
+      </div>
 
-      </div >
+      <div style={{ height: '600px', position: 'relative', maxWidth: '100%', textAlign: 'center' }}>
+        <h1 style={{ fontFamily: "NeueMagnat", fontSize: '60px' }}>WORK TOGETHER</h1>
+        <CircularGallery bend={3} textColor="#000" borderRadius={0.05} />
+      </div>
+
+
+      <div style={{ maxWidth: '100%', height: '20vh' }}>
+      </div>
 
     </>
   )

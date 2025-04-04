@@ -11,19 +11,19 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: italic;
-  ;
+  
   font-weight: 300;
   /* font-size: 15px; */
   /* line-height: 1.7; */
   /* color: #ececee; */
 
-  overflow: hidden;
+  /* overflow: hidden; */
   background-color: #eee!important;
   background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
   background-position: center;
   background-repeat: repeat;
   background-size: 4%;
-  height: 100vh;
+  /* height: 100vh; */
   width: 100%;
 }
 
